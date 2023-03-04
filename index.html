@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+       CSD 340 Web Development with HTML and CSS
+    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#experience">Experience</a> 
+    </nav>
+    <div class="container">
+        <div class="Timmy" id="Timmy">
+            <h1>Timmy Bell</h1>
+                <div class="grid-3-col">
+                    <div class="card">
+                        <div class="card-title">
+                            Me
+                        </div>
+                        <div class="card-content">
+                            <img src="images/headshot2.jpg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            Save the Bees
+                        </div>
+                        <div class="card-content">
+                            <img src="images/Hive.jpg">
+                        </div>
+                    </div>
+                    <div class="card" id="card">
+                        <div class="card-title">
+                            Belize
+                        </div>
+                        <div class="card-content">
+                            <img src="images/Belize.jpg">
+                            <img src="images/toucan.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hobbies" id="hobbies">
+            <h1>Hobbies</h1>
+            <div class="grid-3-col">
+                <div class="card">
+                    <div class="card-title">
+                        Car Audio
+                    </div>
+                    <div class="card-content">
+                        <img src="images/carAudio.jpg">
+                        <p>Car Audio is an old hobby of mine from my high school days. I competed in both sound quality and SPL (Sound Pressure Level) competitions. My first install I paid to have done and it was spendy. I decided any installs after that that I would do by myself with the help of my brother Kenny. The best build I did was mounting four 15" subwoofers behind the front seats of a 4-door 1985 Ford Tempo.  We gutted the interior and poured concrete in the floor pan. Cut holes through the roof and suspended concrete from it. Welding the doors shut and built a wooden dash. Made use of a dual alternator system (Ford Tempo with a hood scoop) and three batteries. It was so loud your eyes could not focus while driving with the stereo on.</p> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        Wood Working
+                    </div>
+                    <div class="card-content">
+                        <img src="images/woodwork.jpg">
+                        <p>Woodworking and building things with my hands brings me immense joy. I have made many projects over the years that include matching oak nightstands, a custom coffee table, a ferret enclosure from on old armoire. and of course, many car audio projects such as amp racks and subwoofer boxes.</p>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <div class="card-title">
+                        Coding
+                    </div>
+                    <div class="card-content">
+                        <img id="coding" src="images/coding.jpg">
+                        <p>As a student in the bachelor’s program for software development at Bellevue University I have been learning languages and programming principals. I use these skills to solve problems that I have in everyday work life. Making programs that tell me what the daily production was within my work area and another that automatically emails me when inventory is running low has been a significant help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="experience" id="experience">
+            <h1>Work Experience</h1>
+            <div class="grid-3-col">
+                <div class="card">
+                    <div class="card-title">
+                        Hornady
+                    </div>
+                    <div class="card-content">
+                        <img src="images/Hornady.jpg">
+                        <p>Currently, I am a Process Supervisor at Hornady Manufacturing. It is my responsibility to make sure the team is:  on track to meet goals, completing all necessary steps in the production process, accountable for how they are performing and the quality of their work, and take care of scheduling conflict with personnel and production. I catch mistakes like this as well!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        Central Community College
+                    </div>
+                    <div class="card-content">
+                        <img src="images/Award.jpg">
+                        <p>
+                            While working full time at Hornady, I started on my educational journey. I was a full-time student in the Information Technology – Developer program at Central Community College. I performed better than I ever anticipated and received an Exceptional Student Award for the program. This award is awarded to one student in each program offered at the college.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        Design House
+                    </div>
+                    <div class="card-content">
+                        <img src="images/Flag.jpg">
+                        <p>
+                            This American flag was a project I did in my garage. It is a to scale official flag according to Title 4 of the United States Code. I drew this by hand and painted it myself. The scaffold is 4 ft wide for reference. The neighbors comment on it when I leave the garage door open. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="card full-width">
+                <div class="card-title">
+                    Contact Form
+                </div>
+                <div class="card-content">
+
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="txtFirstName">First name:</label>
+                            <input type="text" id="txtFirstName" class="input" name="txtFirstName" />
+                        </div>
+                        <div class="form-field">
+                            <label for="txtLastName">Last name:</label>
+                            <input type="text" id="txtLastName" class="input" name="txtLastName" />
+                        </div>
+                        <div class="form-field">
+                            <form action="mailto:Got1sseio@msn.com" method="POST" enctype="text/plain">
+                            <label for="txtEmail">Email:</label>
+                            <input type="text" id="txtEmail" class="input" name="txtEmail" />
+                        </div>
+                        <div class="form-field">
+                            <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&#169; Copyright 2023 Timmy Bell</p>
+    </footer>
+</body>
